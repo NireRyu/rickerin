@@ -1,0 +1,70 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  font-family: system-ui, sans-serif;
+  background: url('../images/savethedate.jpg');
+  
+  /* this breaks position sticky in Firefox */
+  /* overflow-x: hidden; */
+}
+header {
+  grid-column: 1 / 3;
+  color: #E1C58F;
+  text-align: center;
+  font-family: Snell Roundhand, cursive;
+}
+span {
+  font-size: 4rem;
+}
+nav {
+  white-space: nowrap;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* Only stick if you can fit */
+@media (min-height: 300px) {
+  nav ul {
+    position: sticky;
+    top: 0;
+  }
+}
+nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #E1C58F;
+  text-decoration: none;
+}
+nav ul li a.current {
+  background: black;
+}
+main {
+  padding-bottom: 40rem;
+  background: white;
+}
+section {
+  display: inline-flex;
+}
+img{
+  width: 50%;
+  align-self: center;
+}
+.text {
+  text-align: center;
+  margin: 15px;
+}
+section li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+#section-3 img {
+  width: 100%;
+}
