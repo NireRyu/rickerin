@@ -45,7 +45,6 @@ nav ul li a.current {
   background: black;
 }
 main {
-  padding-bottom: 40rem;
   background: white;
 }
 section {
@@ -59,12 +58,22 @@ img{
   text-align: center;
   margin: 15px;
 }
-section li {
+#Wedding_Details li {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: left;
 }
-#section-3 img {
+#Questions {
   width: 100%;
 }
+#Questions img {
+  width: 30%;
+  border: 15px solid;
+}
+#Questions li {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
