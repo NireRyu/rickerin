@@ -16,8 +16,6 @@ header {
   color: #E1C58F;
   text-align: center;
   font-family: Snell Roundhand, cursive;
-}
-span {
   font-size: 4rem;
 }
 nav {
@@ -27,13 +25,6 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-/* Only stick if you can fit */
-@media (min-height: 300px) {
-  nav ul {
-    position: sticky;
-    top: 0;
-  }
 }
 nav ul li a {
   display: block;
@@ -49,6 +40,7 @@ main {
 }
 section {
   display: inline-flex;
+  padding-bottom: 20px;
 }
 img{
   width: 50%;
@@ -58,11 +50,27 @@ img{
   text-align: center;
   margin: 15px;
 }
+.detailImage {
+  grid-area: image;
+  width: 100%;
+}
+#Wedding_Details .text {
+  grid-area: text;
+}
+#Wedding_Details {
+  display: grid;
+  grid-template-areas: "text image";
+}
 #Wedding_Details li {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: left;
+}
+#Wedding_Details li a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
 }
 #Questions {
   width: 100%;
@@ -75,5 +83,48 @@ img{
   margin: 0;
   padding: 0;
   text-align: left;
+  list-style: none;
+}
+
+/* Only stick if you can fit */
+@media (min-height: 400px) {
+  nav ul {
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    display: block;
+  }
+  header {
+    padding: 25px 0;
+    font-size: 3rem;
+  }
+  nav li {
+    text-align: center;
+    font-size: 1rem;
+    border: 2px solid #E1C58F;
+    border-radius: 25px;
+  }
+  #Wedding_Details {
+    display: block;
+    grid-template-areas: none;
+  }
+  .home {
+    display: none;
+  }
+  section {
+    display: block;
+  }
+  img{
+    width: 100%;
+  }
+  #Questions img {
+    width: 50%;
+    border: 5px solid;
+    margin: 0 25%;
+  }
 }
 

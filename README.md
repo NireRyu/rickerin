@@ -14,5 +14,5 @@ The app will automatically reload if you change any of the source files.
 
 #### **Building Release**
 
-Run yarn build to get a fresh copy of the dist file.
+Run `yarn build` to get a fresh copy of the dist file.
 Add the files in the dist folder to the GCP bucket.
