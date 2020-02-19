@@ -42,6 +42,9 @@ section {
   display: inline-flex;
   padding-bottom: 20px;
 }
+section li {
+  padding: 3px;
+}
 img{
   width: 50%;
   align-self: center;
@@ -64,7 +67,6 @@ img{
 #Wedding_Details li {
   list-style: none;
   margin: 0;
-  padding: 0;
   text-align: left;
 }
 #Wedding_Details li a {
@@ -81,9 +83,59 @@ img{
 }
 #Questions li {
   margin: 0;
-  padding: 0;
   text-align: left;
   list-style: none;
+}
+table {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2%;
+}
+.tg {
+  border-collapse:collapse;
+  border-spacing:0;border-color:#bbb;
+}
+.tg td {
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  padding:10px 5px;
+  border-style:solid;
+  border-width:0px;
+  overflow:hidden;
+  word-break:normal;
+  border-top-width:1px;
+  border-bottom-width:1px;
+  border-color:#bbb;
+  color:#594F4F;
+  background-color:#E0FFEB;
+}
+.tg th {
+  font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;
+  padding:10px 5px;
+  border-style:solid;
+  border-width:0px;
+  overflow:hidden;
+  word-break:normal;
+  border-top-width:1px;
+  border-bottom-width:1px;
+  border-color:#bbb;
+  color:#493F3F;
+  background-color:#9DE0AD;
+}
+.tg .tg-rlwy {
+  font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;
+  text-align:center;vertical-align:top;
+}
+.tg .tg-2ap2 {
+  background-color:#C2FFD6;
+  font-family:Verdana, Geneva, sans-serif !important;
+  text-align:center;vertical-align:top;
+}
+.tg .tg-jzjz {
+  font-family:Verdana, Geneva, sans-serif !important;
+  text-align:center;
+  vertical-align:top;
 }
 
 /* Only stick if you can fit */
