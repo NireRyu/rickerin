@@ -53,18 +53,18 @@ img{
   text-align: center;
   margin: 15px;
 }
-.detailImage {
+.imgFlip {
   grid-area: image;
   width: 100%;
 }
-#Wedding_Details .text {
+.sectionFlip .text {
   grid-area: text;
 }
-#Wedding_Details {
+.sectionFlip {
   display: grid;
   grid-template-areas: "text image";
 }
-#Wedding_Details li {
+.sectionFlip li {
   list-style: none;
   margin: 0;
   text-align: left;
@@ -74,11 +74,8 @@ img{
   color: blue;
   font-weight: bold;
 }
-#Questions {
-  width: 100%;
-}
 #Questions img {
-  width: 30%;
+  width: 90%;
   border: 15px solid;
 }
 #Questions li {
