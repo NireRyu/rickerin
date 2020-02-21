@@ -157,7 +157,7 @@ table {
     border: 2px solid #E1C58F;
     border-radius: 25px;
   }
-  #Wedding_Details {
+  .sectionFlip {
     display: block;
     grid-template-areas: none;
   }
