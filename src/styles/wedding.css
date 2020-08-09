@@ -50,6 +50,15 @@ img{
   text-align: center;
   margin: 15px;
 }
+#postponement {
+  display: block;
+}
+#postponement .text {
+  border: 4px dotted red;
+  color: red;
+  margin: 5px;
+  padding: 10px;
+}
 .imgFlip {
   grid-area: image;
   width: 100%;
